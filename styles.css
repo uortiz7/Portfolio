@@ -1,0 +1,307 @@
+/*
+Titulo
+{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+}
+
+Cuerpo
+{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-variation-settings: "wdth" 100;
+}
+*/
+
+:root {
+    --color-primario: #000509;
+    --color-secundario: #0BA249;
+    --color-texto: #FBFEF9;
+    --color-terciario: #797979;
+    --color-titulo: #26de42;
+}
+
+::-webkit-scrollbar {
+    background: var(--color-primario); /* Color del fondo del track */
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-secundario); /* Color del thumb */
+    border-radius: 3px; /* Bordes redondeados */
+    /* border: 2px solid #ffffff; Agregar un borde (opcional) */
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--color-primario);
+    color: var(--color-texto);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: clamp(2.5rem, calc(8vw + 1rem), 6rem);
+    color: var(--color-titulo);
+}
+h2 {
+    font-size: clamp(1rem, calc(1.5vw + 0.8rem), 1.7rem); /* Corregido para que el mínimo sea 1rem y el máximo 2rem */
+}
+h3 {
+    font-size: clamp(1.2rem, calc(1.5vw + 0.5rem), 1.4rem); /* Ya está correcto (el mínimo y máximo coinciden con 1.8rem) */
+}
+h4 {
+    font-size: clamp(0.7rem, calc(1vw + 0.3rem), 0.8rem);
+    color: var(--color-secundario);
+}
+p {
+    font-size: clamp(.1rem, calc(2vw + 0.2rem), 1rem); /* Ya está correcto (mínimo y máximo coinciden con 1rem) */
+}
+.cursiva{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+section{
+    padding: 5vw;
+}
+.borde{
+    border: 4px solid var(--color-secundario);
+    border-top: none;
+    border-bottom: none;
+    border-radius: 50px;
+}
+.izquierda{
+    margin-right: 5vw;
+    border-left: none;
+}
+.derecha{
+    margin-left: 5vw;
+    border-right: none;
+}
+
+
+#id-inicio{
+    height: 100vh;
+    height: 100dvh;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh min(2em, 7%);
+    box-sizing: border-box;
+}
+.header-atajos{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: none;
+}
+a{
+    padding: 10px 12.5px;
+    text-decoration: none;
+}
+.button{
+    padding: 10px 12.5px;
+    background: var(--color-secundario);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header button{
+    padding: 10px 0;
+}
+
+.inicio-info{
+    text-align: center;
+    background: transparent;
+}
+
+h1, p, header, a, .inicio-info, .header-info, h2, h3, h4{
+    background: transparent; /* Fondo transparente para que las burbujas pasen debajo */
+    z-index: 2; /* Asegura que el texto esté por encima */
+} 
+
+
+
+.burbujas {
+    position: absolute; /* O "fixed" si quieres que floten en toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%; /* Que ocupen toda la anchura */
+    height: 100%; /* Que ocupen toda la altura */
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; /* Nivel bajo para estar detrás del texto */
+    pointer-events: none; 
+}
+.burbujas span{
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    max-width: 10px;
+    max-height: 10px;
+    z-index: 1;
+    background: var(--color-secundario);
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px var(--color-secundario), 0 0 50px var(--color-secundario), 0 0 100px var(--color-secundario);
+    animation: animate 12.5s linear infinite;
+    animation-duration: calc(40s / var(--i));
+}
+@keyframes animate{
+    0%{
+        transform: translateY(99vh) scale(0);
+    }
+    100%{
+        transform: translate(10vh) scale(1);
+    }
+}
+
+
+.informacion{
+    padding: 2vw;
+    display: flex;
+    justify-content: space-around;
+}
+svg{
+    width: max(5vw, 30px);
+}
+
+
+#id-proyectos{
+    padding: 10vh 5vw;
+}
+#id-proyectos a{
+    display: inline-block;
+}
+.proyectos{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    grid-gap: 2rem; /* Espacio entre las columnas */
+}
+.proyectos article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los hijos a la izquierda */
+    gap: 1rem; /* Espaciado entre elementos */
+}
+.proyectos h3{
+    margin: 1vw 0;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+#id-contactar{
+    box-sizing: border-box;
+    margin-bottom: 10vh;
+    height: 80vh;
+    height: 80dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.contactar{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contactar-title{
+    font-weight: 600;
+    color: var(--color-secundario);
+    font-size: 40px;
+}
+.contactar-title hr{
+    border: none;
+    width: clamp(5rem, calc(10vw + 3rem), 8rem);
+    height: 5px;
+    background: var(--color-secundario);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contactar-inputs{
+    width: 60vw;
+    max-width: 400px;
+    height: 50px;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 2px solid var(--color-terciario);
+}
+.contactar-inputs:hover{
+    border: 2px solid var(--color-secundario);
+}
+.contactar-inputs:focus{
+    border: 2px solid var(--color-secundario);
+}
+.contactar textarea {
+    height: 80px;
+    padding-top: 15px;
+    border-radius: 20px;
+    resize: none;
+}
+.contactar-inputs::placeholder{
+    color: var(--color-terciario);
+}
+
+/* 
+@media (width > 800px){
+    .proyectos{
+        flex-direction: column;
+        width: 80vw;
+    }
+} */
+
+
+@media (width < 780px){
+    header{
+        justify-content: center;
+        text-align: center;
+    }
+    .header-atajos{
+        display: none;
+    }
+    .not-burbuja{
+        display: none;
+    }
+
+    #id-informacion{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .proyectos{
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr); /* 3 columnas de igual tamaño */
+        grid-template-rows: 3fr;
+    }
+}
