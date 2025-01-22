@@ -21,7 +21,7 @@ Cuerpo
     --color-terciario: #797979;
     --color-titulo: #26de42;
     --espaciado-vh: 10vh;
-    --espaciado-dvh: 10dvh;
+    --espaciado-lvh: 10lvh;
 }
 
 ::-webkit-scrollbar {
@@ -72,11 +72,11 @@ p, .button{
 }
 section{
     margin: var(--espaciado-vh);
-    margin: var(--espaciado-dvh);
+    margin: var(--espaciado-lvh);
     margin-top: 0;
     margin-bottom: 0;
     padding: var(--espaciado-vh);
-    padding: var(--espaciado-dvh);
+    padding: var(--espaciado-lvh);
 }
 .borde{
     border: 4px solid var(--color-secundario);
@@ -96,7 +96,7 @@ section{
 
 #id-inicio{
     height: 100vh;
-    height: 100dvh;
+    height: 100svh;
     margin: 0;
     padding: 0;
     position: relative;
@@ -114,7 +114,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2vh min(2em, 7%);
-    padding: 2dvh min(2em, 7%);
+    padding: 2svh min(2em, 7%);
     box-sizing: border-box;
 }
 .header-atajos{
@@ -154,7 +154,7 @@ h1, p, header, a, .inicio-info, .header-info, h2, h3, h4, .descargar{
 
 .descargar{
     margin-bottom: 5vh;
-    margin-bottom: 5dvh;
+    margin-bottom: 5svh;
     background: transparent;
     position: absolute;
     bottom: 0;
@@ -176,11 +176,9 @@ h1, p, header, a, .inicio-info, .header-info, h2, h3, h4, .descargar{
     pointer-events: none; 
 }
 .burbujas span{
-    position: relative;
-    width: 3vw;
-    width: 3dvw;
     height: 3vw;
-    height: 3dvw;
+    width: 3vw;
+    position: relative;
     max-width: 10px;
     max-height: 10px;
     z-index: 1;
@@ -193,24 +191,22 @@ h1, p, header, a, .inicio-info, .header-info, h2, h3, h4, .descargar{
 @keyframes animate{
     0%{
         transform: translateY(99vh) scale(0);
-        transform: translateY(99dvh) scale(0);
+        transform: translateY(99svh) scale(0);
     }
     100%{
         transform: translate(10vh) scale(1);
-        transform: translate(10dvh) scale(1);
+        transform: translate(10svh) scale(1);
     }
 }
 
 
 .informacion{
     padding: 2vw;
-    padding: 2dvw;
     display: flex;
     justify-content: space-around;
 }
 svg{
     width: max(5vw, 30px);
-    width: max(5dvw, 30px);
 }
 
 
@@ -219,13 +215,13 @@ svg{
     flex-direction: column;
     align-items: center;
     grid-gap: 5vh;
-    grid-gap: 5dvh;
+    grid-gap: 5lvh;
 }
 article{
     width: 100%;
     max-width: 600px;
     padding: var(--espaciado-vh);
-    padding: var(--espaciado-dvh);
+    padding: var(--espaciado-lvh);
     padding-left: 0;
     display: flex;
     flex-direction: column;
@@ -243,9 +239,9 @@ img{
 
 #id-contactar{
     height: 80vh;
-    height: 80dvh;
+    height: 80lvh;
     margin-bottom: var(--espaciado-vh);
-    margin-bottom: var(--espaciado-dvh);
+    margin-bottom: var(--espaciado-lvh);
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
@@ -260,7 +256,7 @@ img{
     align-items: start;
     justify-content: center;
     gap: 2vh;
-    gap: 2dvh;
+    gap: 2lvh;
 }
 .contactar-title hr{
     border: none;
@@ -299,7 +295,7 @@ img{
 @media (width < 760px){
     :root{
         --espaciado-vh: 5vh;
-        --espaciado-dvh: 5dvh;
+        --espaciado-lvh: 5lvh;
     }
 
     header{
@@ -315,6 +311,6 @@ img{
 
     #id-contactar{
         height: 90vh;
-        height: 90dvh;
+        height: 90lvh;
     }
 }
