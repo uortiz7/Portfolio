@@ -1,10 +1,11 @@
-#id-informacion p, .informacion {
+#id-informacion p,
+.svg-informacion {
   padding: 2vw 0 2vw 2vw;
 }
 
 /* --------------------------------------------------- */
 
-.informacion {
+.svg-informacion {
   display: flex;
   justify-content: space-around;
 }
