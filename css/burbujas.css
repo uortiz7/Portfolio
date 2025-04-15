@@ -9,6 +9,7 @@
   z-index: 1;
   pointer-events: none;
 }
+
 .burbujas span {
   height: 3vw;
   width: 3vw;
@@ -23,6 +24,19 @@
   animation: animate 12.5s linear infinite;
   animation-duration: calc(40s / var(--i));
 }
+
+h1,
+p,
+header,
+.inicio-info,
+.header-info,
+h2,
+h3,
+h4 {
+  background: transparent;
+  z-index: 2;
+}
+
 @keyframes animate {
   0% {
     transform: translateY(99vh) scale(0);

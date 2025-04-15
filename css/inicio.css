@@ -11,6 +11,9 @@
   align-items: center;
   cursor: default;
 }
+
+/* --------------------------------------------------- */
+
 header {
   width: 100%;
   position: absolute;
@@ -31,36 +34,30 @@ header {
   align-items: center;
   background: none;
 }
-a {
-  padding: 10px 12.5px;
-  text-decoration: none;
+.cursiva {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
 }
-.button {
-  padding: 10px 12.5px;
-  background: var(--color-secundario);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-header button {
-  padding: 10px 0;
-}
-.button:hover {
-  transition: 0.25s;
+
+/* --------------------------------------------------- */
+
+.a-diferentes {
   background: transparent;
 }
+.a-diferentes:hover {
+  background: var(--color-secundario);
+}
+
+.descargar {
+  margin-bottom: 5vh;
+  margin-bottom: 5svh;
+  position: absolute;
+  bottom: 0;
+}
+
+/* --------------------------------------------------- */
 
 .inicio-info {
   text-align: center;
   background: transparent;
-}
-.descargar {
-  margin-bottom: 5vh;
-  margin-bottom: 5svh;
-  background: transparent;
-  position: absolute;
-  bottom: 0;
-}
-.descargar:hover {
-  background: var(--color-secundario);
 }

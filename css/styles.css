@@ -1,18 +1,10 @@
-/*
-Titulo
-{
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
-}
+@import "./inicio.css";
+@import "./burbujas.css";
+@import "./informacion.css";
+@import "./proyectos.css";
+@import "./contactar.css";
 
-Cuerpo
-{
-    font-family: "Open Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-variation-settings: "wdth" 100;
-}
-*/
+/* --------------------------------------------------- */
 
 :root {
   --color-primario: #000509;
@@ -25,20 +17,18 @@ Cuerpo
 }
 
 ::-webkit-scrollbar {
-  background: var(--color-primario); /* Color del fondo del track */
+  background: var(--color-primario);
   width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-secundario); /* Color del thumb */
-  border-radius: 3px; /* Bordes redondeados */
-  /* border: 2px solid #ffffff; Agregar un borde (opcional) */
+  background: var(--color-secundario);
+  border-radius: 3px;
 }
 
-html,
-body {
-  scroll-behavior: smooth;
-}
+/* --------------------------------------------------- */
+
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,9 +36,11 @@ body {
   color: var(--color-texto);
   font-family: "Poppins", serif;
   font-weight: 400;
-  font-style: normal;
   overflow-x: hidden;
+  cursor: default;
 }
+
+/* --------------------------------------------------- */
 
 h1 {
   font-size: clamp(2.5rem, calc(8vw + 1rem), 6rem);
@@ -64,13 +56,30 @@ h4 {
   font-size: clamp(0.7rem, calc(1vw + 0.3rem), 0.8rem);
   color: var(--color-secundario);
 }
+
+/* --------------------------------------------------- */
+
+a,
+button {
+  padding: 10px 12.5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-secundario);
+  z-index: 2;
+  transition: 0.25s;
+}
+a:hover,
+button:hover {
+  background: transparent;
+}
+
+/* --------------------------------------------------- */
+
 p,
 button {
   font-size: clamp(0.1rem, calc(2vw + 0.2rem), 1rem);
-}
-.cursiva {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
 }
 section {
   margin: var(--espaciado-vh);
@@ -95,19 +104,7 @@ section {
   border-right: none;
 }
 
-h1,
-p,
-header,
-a,
-.inicio-info,
-.header-info,
-h2,
-h3,
-h4,
-.descargar {
-  background: transparent;
-  z-index: 2;
-}
+/* --------------------------------------------------- */
 
 @media (width < 760px) {
   :root {
