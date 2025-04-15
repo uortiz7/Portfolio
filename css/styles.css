@@ -65,7 +65,7 @@ h4 {
   color: var(--color-secundario);
 }
 p,
-.button {
+button {
   font-size: clamp(0.1rem, calc(2vw + 0.2rem), 1rem);
 }
 .cursiva {
@@ -95,59 +95,6 @@ section {
   border-right: none;
 }
 
-#id-inicio {
-  height: 100vh;
-  height: 100svh;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header {
-  width: 100%;
-  position: absolute;
-  top: 0%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2vh min(2em, 7%);
-  padding: 2svh min(2em, 7%);
-  box-sizing: border-box;
-}
-.header-atajos {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  background: none;
-}
-a {
-  padding: 10px 12.5px;
-  text-decoration: none;
-}
-.button {
-  padding: 10px 12.5px;
-  background: var(--color-secundario);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-header button {
-  padding: 10px 0;
-}
-.button:hover {
-  transition: 0.25s;
-  background: transparent;
-}
-
-.inicio-info {
-  text-align: center;
-  background: transparent;
-}
-
 h1,
 p,
 header,
@@ -160,106 +107,6 @@ h4,
 .descargar {
   background: transparent;
   z-index: 2;
-}
-
-.descargar {
-  margin-bottom: 5vh;
-  margin-bottom: 5svh;
-  background: transparent;
-  position: absolute;
-  bottom: 0;
-}
-.descargar:hover {
-  background: var(--color-secundario);
-}
-
-.informacion {
-  padding: 2vw;
-  display: flex;
-  justify-content: space-around;
-}
-svg {
-  width: max(5vw, 30px);
-}
-
-.proyectos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-gap: 5vh;
-  grid-gap: 5lvh;
-}
-article {
-  width: 100%;
-  max-width: 600px;
-  padding: var(--espaciado-vh);
-  padding: var(--espaciado-lvh);
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-}
-article.borde {
-  border-radius: 0 50px 50px 0;
-}
-img {
-  max-width: 100%;
-}
-
-#id-contactar {
-  height: 80vh;
-  height: 80lvh;
-  margin-bottom: var(--espaciado-vh);
-  margin-bottom: var(--espaciado-lvh);
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.contactar {
-  height: 100%;
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 2vh;
-  gap: 2lvh;
-}
-.contactar-title hr {
-  border: none;
-  width: clamp(5rem, calc(10vw + 3rem), 8rem);
-  height: 5px;
-  background: var(--color-secundario);
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.contactar-inputs {
-  height: 50px;
-  width: 100%;
-  outline: none;
-  padding-left: 25px;
-  font-weight: 500;
-  border-radius: 50px;
-  border: 2px solid var(--color-terciario);
-}
-.contactar-inputs:hover {
-  border: 2px solid var(--color-secundario);
-}
-.contactar-inputs:focus {
-  border: 2px solid var(--color-secundario);
-}
-.contactar textarea {
-  height: 80px;
-  padding-top: 15px;
-  border-radius: 20px;
-  resize: none;
-}
-.contactar-inputs::placeholder {
-  color: var(--color-terciario);
 }
 
 @media (width < 760px) {

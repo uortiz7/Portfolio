@@ -1,0 +1,66 @@
+#id-inicio {
+  height: 100vh;
+  height: 100svh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+header {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh min(2em, 7%);
+  padding: 2svh min(2em, 7%);
+  box-sizing: border-box;
+}
+.header-info {
+  cursor: default;
+}
+.header-atajos {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background: none;
+}
+a {
+  padding: 10px 12.5px;
+  text-decoration: none;
+}
+.button {
+  padding: 10px 12.5px;
+  background: var(--color-secundario);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header button {
+  padding: 10px 0;
+}
+.button:hover {
+  transition: 0.25s;
+  background: transparent;
+}
+
+.inicio-info {
+  text-align: center;
+  background: transparent;
+}
+.descargar {
+  margin-bottom: 5vh;
+  margin-bottom: 5svh;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+}
+.descargar:hover {
+  background: var(--color-secundario);
+}
