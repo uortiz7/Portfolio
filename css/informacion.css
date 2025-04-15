@@ -6,9 +6,12 @@
 /* --------------------------------------------------- */
 
 .svg-informacion {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 6vw;
 }
-svg {
-  width: 5vw;
+@media (width < 760px) {
+  .svg-informacion {
+    gap: 4vw;
+  }
 }
