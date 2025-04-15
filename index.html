@@ -137,7 +137,7 @@
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
-            style="fill: #003B57;"
+            style="fill: #003b57"
           >
             <title>SQLite</title>
             <path
@@ -231,32 +231,35 @@
           <h2>Contactar</h2>
           <hr />
         </div>
-        <input
-          type="hidden"
-          name="access_key"
-          value="37d29a8d-e2e3-4c9c-8ad1-006f8ebc22ac"
-        />
-        <input
-          type="text"
-          name="name"
-          placeholder="Tu Nombre"
-          class="contactar-inputs"
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Tu Email"
-          class="contactar-inputs"
-          required
-        />
-        <textarea
-          name="mensage"
-          placeholder="Tu Mensage"
-          class="contactar-inputs"
-          required
-        ></textarea>
-        <button class="button">Enviar</button>
+          <input
+            type="hidden"
+            name="access_key"
+            value="37d29a8d-e2e3-4c9c-8ad1-006f8ebc22ac"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Tu Nombre"
+            class="contactar-inputs"
+            autocomplete="off"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu Email"
+            class="contactar-inputs"
+            autocomplete="off"
+            required
+          />
+          <textarea
+            name="mensage"
+            placeholder="Tu Mensage"
+            class="contactar-inputs"
+            autocomplete="off"
+            required
+          ></textarea>
+          <button class="button">Enviar</button>
       </form>
     </section>
   </body>

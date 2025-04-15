@@ -26,9 +26,6 @@ header {
   padding: 2svh min(2em, 7%);
   box-sizing: border-box;
 }
-.header-info {
-  cursor: default;
-}
 .header-atajos {
   display: flex;
   gap: 2rem;

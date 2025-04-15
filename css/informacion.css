@@ -12,6 +12,6 @@
 }
 @media (width < 760px) {
   .svg-informacion {
-    gap: 4vw;
+    gap: 3vw;
   }
 }
