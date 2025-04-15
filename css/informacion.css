@@ -6,12 +6,15 @@
 /* --------------------------------------------------- */
 
 .svg-informacion {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 6vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+svg{
+  width: 6vw;
 }
 @media (width < 760px) {
-  .svg-informacion {
-    gap: 3vw;
+  svg {
+    width: 8vw;
   }
 }
