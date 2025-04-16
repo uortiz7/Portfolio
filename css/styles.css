@@ -105,6 +105,7 @@ article {
   border-width: 0 4px 0 0;
   border-style: none solid none none;
   border-color: var(--color-secundario);
+  transform: translateZ(0);
 }
 .derecha {
   border-radius: 50px 0 0 50px;
@@ -113,6 +114,7 @@ article {
   border-width: 0 0 0 4px;
   border-style: none none none solid;
   border-color: var(--color-secundario);
+  transform: translateZ(0);
 }
 
 /* --------------------------------------------------- */
