@@ -91,6 +91,10 @@ section {
   padding: var(--espaciado-vh);
   padding: var(--espaciado-lvh);
 }
+section,
+article {
+  background: inherit;
+}
 
 /* --------------------------------------------------- */
 
