@@ -93,7 +93,7 @@ section {
 }
 section,
 article {
-  background: inherit;
+  background: var(--color-primario);
 }
 
 /* --------------------------------------------------- */
