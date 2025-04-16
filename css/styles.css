@@ -95,16 +95,24 @@ section {
 /* --------------------------------------------------- */
 
 .izquierda {
-  border-right: 4px solid var(--color-secundario);
   border-radius: 0 50px 50px 0;
   margin-left: 0;
   border-left: none;
+  
+  border-top: 0;
+  border-right: 4px solid var(--color-secundario);
+  border-bottom: 0;
+  border-left: 0;
 }
 .derecha {
-  border-left: 4px solid var(--color-secundario);
   border-radius: 50px 0 0 50px;
   margin-right: 0;
   border-right: none;
+  
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 4px solid var(--color-secundario);
 }
 
 /* --------------------------------------------------- */
