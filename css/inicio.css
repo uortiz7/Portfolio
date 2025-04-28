@@ -38,17 +38,9 @@ header {
 
 /* --------------------------------------------------- */
 
-.a-diferentes {
-  background: transparent;
-}
-.a-diferentes:hover {
-  background: var(--color-secundario);
-}
 .descargar {
-  margin-bottom: 5vh;
-  margin-bottom: 5svh;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
 }
 
 /* --------------------------------------------------- */

@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 svg{
-  width: 6vw;
+  width: 5vw;
 }
 @media (width < 760px) {
   svg {

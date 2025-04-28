@@ -2,6 +2,9 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Portafolio - Ulises Ortiz" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Ulises Ortiz" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio - Ulises Ortiz</title>
     <link rel="icon" href="./img/favicon.png" type="image/png" />
@@ -19,9 +22,15 @@
           <h4>Disponible para Trabajar</h4>
         </div>
         <nav class="header-atajos">
-          <a href="#id-informacion" class="a-diferentes">Sobre Mi</a>
-          <a href="#id-proyectos" class="a-diferentes">Proyectos</a>
-          <a href="#id-contactar">CONTACTAR</a>
+          <a href="#id-informacion" class="a-diferentes">
+            <span class="subrayado">Sobre Mi</span>
+          </a>
+          <a href="#id-proyectos" class="a-diferentes">
+            <span class="subrayado">Proyectos</span>
+          </a>
+          <a href="#id-contactar">
+            <span class="subrayado">CONTACTAR</span>
+          </a>
         </nav>
       </header>
 
@@ -34,9 +43,9 @@
         </p>
       </div>
 
-      <a href="./CV - Ulises Ortiz.pdf" download class="descargar a-diferentes"
-        >Descargar CV</a
-      >
+      <a href="./CV - Ulises Ortiz.pdf" download class="descargar">
+        <span class="subrayado"> Descargar CV </span>
+      </a>
 
       <div class="burbujas">
         <span style="--i: 11"></span>
@@ -170,9 +179,10 @@
           <a
             href="https://cineeflicks.netlify.app/"
             target="_blank"
-            class="button"
-            >Ver Más</a
+            class="button diferentes"
           >
+            <span class="subrayado a-diferentes">Ver Más</span>
+          </a>
         </article>
         <article class="izquierda">
           <div>
@@ -191,9 +201,10 @@
           <a
             href="https://laligaargentina.netlify.app/"
             target="_blank"
-            class="button"
-            >Ver Más</a
+            class="button diferentes"
           >
+            <span class="subrayado">Ver Más</span>
+          </a>
         </article>
         <article class="izquierda">
           <div>
@@ -214,9 +225,10 @@
           <a
             href="https://tuturismoargentina.netlify.app/"
             target="_blank"
-            class="button"
-            >Ver Más</a
+            class="button diferentes"
           >
+            <span class="subrayado">Ver Más</span>
+          </a>
         </article>
       </div>
     </section>
@@ -231,35 +243,37 @@
           <h2>Contactar</h2>
           <hr />
         </div>
-          <input
-            type="hidden"
-            name="access_key"
-            value="37d29a8d-e2e3-4c9c-8ad1-006f8ebc22ac"
-          />
-          <input
-            type="text"
-            name="name"
-            placeholder="Tu Nombre"
-            class="contactar-inputs"
-            autocomplete="off"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Tu Email"
-            class="contactar-inputs"
-            autocomplete="off"
-            required
-          />
-          <textarea
-            name="mensage"
-            placeholder="Tu Mensage"
-            class="contactar-inputs"
-            autocomplete="off"
-            required
-          ></textarea>
-          <button class="button">Enviar</button>
+        <input
+          type="hidden"
+          name="access_key"
+          value="37d29a8d-e2e3-4c9c-8ad1-006f8ebc22ac"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Tu Nombre"
+          class="contactar-inputs"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Tu Email"
+          class="contactar-inputs"
+          autocomplete="off"
+          required
+        />
+        <textarea
+          name="mensage"
+          placeholder="Tu Mensage"
+          class="contactar-inputs"
+          autocomplete="off"
+          required
+        ></textarea>
+        <button class="diferentes">
+          <span class="subrayado">Enviar</span>
+        </button>
       </form>
     </section>
   </body>
