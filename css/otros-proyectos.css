@@ -1,0 +1,44 @@
+.otros-proyectos{
+  padding: var(--espaciado-lvh);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.otros-proyectos article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.info-otros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.info-otros > div{
+  display: flex;
+}
+
+@media (width < 760px) {
+  .otros-proyectos article {
+    grid-template-columns: 1fr 1fr;
+  }
+  .info-otros{
+    justify-content: space-evenly;
+  }
+}
+
+@media (width < 520px) {
+  .otros-proyectos article {
+    grid-template-columns: 1fr;
+  }
+  .info-otros{      
+    gap: 1rem;
+  }
+}

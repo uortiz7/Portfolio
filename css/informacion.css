@@ -1,19 +1,33 @@
-#id-informacion p,
-.svg-informacion {
+#id-informacion p{
   padding: 2vw 0 2vw 2vw;
 }
 
 /* --------------------------------------------------- */
 
 .svg-informacion {
+  padding: 2vw 0;
+  height: 10vw;
   display: flex;
   justify-content: space-between;
 }
-svg{
-  width: 5vw;
+.svg-informacion > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-@media (width < 760px) {
-  svg {
-    width: 8vw;
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (width < 758px) {
+  .svg-informacion {
+    height: 25vw;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .svg-informacion > div {
+    justify-content: space-around;
   }
 }
