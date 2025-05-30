@@ -1,0 +1,48 @@
+---
+import Burbujas from "./burbujas";
+---
+
+<section class="relative h-screen flex justify-center items-center">
+  <header
+    class="absolute top-0 w-full flex justify-center items-center py-4 px-8 z-10 md:justify-between"
+  >
+    <div class="flex flex-col items-center md:items-start">
+      <span class="text-2xl">Portafolio</span>
+      <span class="font-medium text-sm italic !text-[#0ba249]">
+        Disponible para Trabajar
+      </span>
+    </div>
+
+    <nav class="gap-8 hidden md:flex">
+      <a href="#id-informacion" class="!border-none"> Sobre Mi </a>
+      <a href="#id-proyectos" class="!border-none"> Proyectos </a>
+      <a href="#id-contactar" class="!border-none"> CONTACTAR </a>
+    </nav>
+  </header>
+
+  <div class="flex flex-col items-center text-center gap-5 z-10">
+    <h2 class="italic font-light">Técnico Universitario en Programación</h2>
+    <h1 class="text-6xl sm:text-8xl !text-[#26de42]">Ulises Ortiz</h1>
+    <p class="text-center max-w-xl">
+      Constantemente aprendiendo sobre nuevos paradigmas y tecnologías para aplicar la solución correcta en el lugar indicado
+    </p>
+  </div>
+
+  <nav class="absolute flex items-center gap-7 bottom-5 z-10">
+    <button
+      class="!border-none"
+      onclick="window.open('/CV - Ulises Ortiz.pdf', '_blank')"
+    >
+      Descargar CV
+    </button>
+    <a
+      class="no-after !border-none !p-0 !static"
+      href="https://github.com/uortiz7"
+      target="_blank"
+    >
+      <img src="/icons/github.svg" alt="GitHub" class="w-11 h-11" />
+    </a>
+  </nav>
+</section>
+
+<Burbujas />

@@ -1,0 +1,40 @@
+<section
+  id="id-contactar"
+  class="derecha m-5 p-5 pl-0 sm:!p-15 sm:m-15 h-[80lvh] !my-[10lvh] flex items-center justify-center"
+>
+  <form
+    action="https://formsubmit.co/dia.ortiz.ulises@gmail.com"
+    method="POST"
+    class="max-w-lg w-full h-full flex flex-col justify-center items-start gap-8"
+  >
+    <div>
+      <h2>Contactar</h2>
+      <hr class="h-1 bg-[#0ba249] border-none rounded-full" />
+    </div>
+    <div class="w-full flex flex-col gap-3">
+      <input
+        type="text"
+        name="name"
+        placeholder="Tu Nombre"
+        autocomplete="off"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Tu Email"
+        autocomplete="off"
+        required
+      />
+      <textarea
+        name="message"
+        placeholder="Tu Mensaje"
+        autocomplete="off"
+        required></textarea>
+    </div>
+    <button type="submit">Enviar</button>
+
+    <input type="hidden" name="_next" value="http://localhost:4321" />
+    <input type="hidden" name="_captcha" value="false" />
+  </form>
+</section>

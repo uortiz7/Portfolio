@@ -1,0 +1,33 @@
+---
+import Hero from "../components/hero/hero.astro";
+import SobreMi from "../components/sobre-mi.astro";
+import Proyectos from "../components/proyectos/proyectos.astro";
+import OtrosProyectos from "../components/otros-proyectos/otros-proyectos.astro";
+import Contactar from "../components/contactar.astro";
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="{Astro.generator}" />
+    <meta
+      name="description"
+      content="Portafolio de Ulises Ortiz - Desarrollador Front-End. Técnico Superior en Programación especializado en desarrollo web, React, Astro y más."
+    />
+    <title>Ulises Ortiz - Técnico Programador</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+  <body>
+    <Hero />
+    <SobreMi />
+    <Proyectos />
+    <OtrosProyectos />
+    <Contactar />
+  </body>
+</html>

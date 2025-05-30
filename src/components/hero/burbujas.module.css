@@ -1,0 +1,40 @@
+.burbujas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.burbujas span {
+  height: 3vw;
+  width: 3vw;
+  position: relative;
+  max-width: 10px;
+  max-height: 10px;
+  z-index: -1;
+  background: var(--color-secundario);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 10px var(--color-secundario),
+    0 0 50px var(--color-secundario),
+    0 0 100px var(--color-secundario);
+  animation: animate 12.5s linear infinite;
+  animation-duration: calc(40s / var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(99vh) scale(0);
+    transform: translateY(99svh) scale(0);
+  }
+  100% {
+    transform: translate(10vh) scale(1);
+    transform: translate(10svh) scale(1);
+  }
+}
