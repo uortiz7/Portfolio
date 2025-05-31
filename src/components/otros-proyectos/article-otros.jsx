@@ -6,7 +6,7 @@ export default function ArticleOtros() {
   );
 
   return (
-    <div className="w-full sm:p-5 lg:p-10 flex flex-col gap-10">
+    <div className="px-6 w-full sm:p-5 lg:p-10 flex flex-col gap-10">
       {otrosProyectos.map((proyecto) => (
         <article
           className="w-full flex flex-col items-center md:grid md:grid-cols-2 justify-between gap-4"
